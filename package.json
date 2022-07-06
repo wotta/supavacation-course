@@ -14,7 +14,7 @@
     "@tailwindcss/forms": "^0.4.0",
     "classnames": "^2.3.1",
     "formik": "^2.2.9",
-    "next": "12.0.10",
+    "next": "^12.2.0",
     "prop-types": "^15.8.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
@@ -27,7 +27,7 @@
     "eslint": "8.8.0",
     "eslint-config-next": "12.0.10",
     "postcss": "^8.4.6",
-    "prisma": "^3.15.2",
+    "prisma": "^4.0.0",
     "tailwindcss": "^3.0.18"
   }
 }
