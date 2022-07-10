@@ -6,6 +6,14 @@ const supabase = createClient({
     process.env.SUPABASE_KEY,
 });
 
+export const config = {
+    api: {
+        bodyParser: {
+            sizeLimit: '10mb',
+        },
+    }
+}
+
 export default async function handler(request, response) {
     if (request.method !== 'POST') {
         response.setHeader('Allow', ['POST']);
