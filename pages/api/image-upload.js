@@ -53,7 +53,10 @@ export default async function handler(request, response) {
             throw new Error('Unable to upload image to storage');
         }
 
-        const url = `${process.env.SUPABASE_URL.replace('.co', '.in')}/storage/v1/object/public/${data.Key}`;
+        const url = `${process.env.SUPABASE_URL.replace(
+            '.co',
+            '.in'
+        )}/storage/v1/object/public/${data.Key}`;
 
         return response.status(201).json({ url });
     } catch (error) {
