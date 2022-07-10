@@ -1,3 +1,4 @@
+import axios from 'axios';
 import { useState } from 'react';
 import { useRouter } from 'next/router';
 import PropTypes from 'prop-types';
@@ -44,6 +45,7 @@ const ListingForm = ({
 
       toast.success('Uploaded successfully', { id: toastId });
     } catch (error) {
+      console.log(error);
       toast.error('Unable to upload image', { id: toastId });
       setImageUrl('');
     } finally {
